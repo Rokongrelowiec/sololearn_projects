@@ -186,3 +186,12 @@ while True:
         elif x == 'laser':
             a.hit()
 '''
+
+def password_generator():
+    # random password contains form 6 to 30 characters
+    import random 
+    all_num_word = 'abcdefghijklmnoprstuwxyzABCDEFGHIJKLMNOPRSTUWXYZ1234567890 !"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~'
+    luck = random.randint(6, 30)
+    print(''.join(random.choices(all_num_word, k=luck)))
+
+#password_generator()
